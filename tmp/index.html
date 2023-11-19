@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallary</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>ISET Gallary</h1>
+            <div class="gallary">
+
+                <figure class="card">
+                    <img src="images/bathroom.jpg" alt="">
+                    <figcaption>Bathroom</figcaption>
+                    
+                </figure>
+                <figure class="card">
+                    <img src="images/conell-box.jpg" alt="">
+                    <figcaption>Cornell Box</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/mouth.jpg" alt="">
+                    <figcaption>Mouth</figcaption>
+                </figure>
+                
+                <figure class="card">
+                    <div class="popup" onclick="myFunction()">click me
+                        <img src="images/placeholder_01.jpg" alt="">
+                        <span class="popuptext" id="myPopup">A Simple Popup!</span>
+                    </div>
+                    <figcaption>Placeholder</figcaption>
+                </figure>               
+                <figure class="card">
+                    <img src="images/placeholder_02.jpg" alt="">
+                    <figcaption>Placeholder</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/placeholder_03.jpg" alt="">
+                    <figcaption>Placeholder</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="images/placeholder_04.jpg" alt="">
+                    <figcaption>Deers</figcaption>
+                </figure>
+                <!-- <figure class="card">
+                    <img src="image8.jpeg" alt="">
+                    <figcaption>Image8</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="image9.jpeg" alt="">
+                    <figcaption>Image9</figcaption>
+                </figure> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+          var popup = document.getElementById("myPopup");
+          popup.classList.add()
+          popup.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

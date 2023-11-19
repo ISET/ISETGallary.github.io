@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,3 +56,62 @@
     </div>
 </body>
 </html>
+=======
+<div style='display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;'>
+  <h1 style='grid-column: 1 / -1; text-align: center; font-family: Arial, sans-serif;'>ISET Gallery</h1>
+  <!-- Gallery Images -->
+  <div class='image-container' style='position: relative;'>
+    <img src='images/bathroom.jpg' alt='Image 1' style='width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; filter: grayscale(100%);' onmouseover='this.style.filter="none"' onmouseout='this.style.filter="grayscale(100%)"'>
+    <!-- More images will be added here -->
+  </div>
+  <div class='image-container' style='position: relative;'>
+    <img src='images/conell-box.jpg' alt='Image 1' style='width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; filter: grayscale(100%);' onmouseover='this.style.filter="none"' onmouseout='this.style.filter="grayscale(100%)"'>
+  </div>
+  <div class='image-container' style='position: relative;'>
+    <img src='images/mouth.jpg' alt='Image 1' style='width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; filter: grayscale(100%);' onmouseover='this.style.filter="none"' onmouseout='this.style.filter="grayscale(100%)"'>
+  </div>
+  <div class='image-container' style='position: relative;'>
+    <img src='images/placeholder_01.jpg' alt='Image 1' style='width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; filter: grayscale(100%);' onmouseover='this.style.filter="none"' onmouseout='this.style.filter="grayscale(100%)"'>
+    <!-- More images will be added here -->
+  </div>
+  <div class='image-container' style='position: relative;'>
+    <img src='images/placeholder_02.jpg' alt='Image 1' style='width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; filter: grayscale(100%);' onmouseover='this.style.filter="none"' onmouseout='this.style.filter="grayscale(100%)"'>
+  </div>
+  <div class='image-container' style='position: relative;'>
+    <img src='images/placeholder_03.jpg' alt='Image 1' style='width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; filter: grayscale(100%);' onmouseover='this.style.filter="none"' onmouseout='this.style.filter="grayscale(100%)"'>
+  </div>
+  <script>
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('popup')) {
+          hidePopup();
+        }
+      };
+    </script>
+    <script>
+  // Function to show the popup
+  function showPopup(imageSrc, imageInfo) {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+    // Set the image source and information
+    popup.innerHTML = '<img src="' + imageSrc + '" alt="Image" style="width:100%;"><p>' + imageInfo + '</p><a href="' + imageSrc + '" download>Download Image</a><br><button onclick="hidePopup()">Close</button>';
+  }
+
+  // Function to hide the popup
+  function hidePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+  }
+
+  // Add click event listeners to images
+  document.querySelectorAll('.image-container img').forEach(img => {
+    img.addEventListener('click', function() {
+      showPopup(this.src, 'Additional image information here');
+    });
+  });
+</script>
+<div id='popup' onclick='event.stopPropagation()' style='display: none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);'>
+    <p>Image information and download link will go here.</p>
+    <button onclick='hidePopup()' style='position: absolute; top: 10px; right: 10px; border: none; background: none; font-size: 16px; cursor: pointer;'>&times;</button>
+</div>
+</div>
+>>>>>>> Stashed changes
